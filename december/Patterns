@@ -1,0 +1,152 @@
+n=5
+* 
+* 2 
+* 2 * 
+* 2 * 4 
+* 2 * 4 * 
+for(int row=1;row<=n;row++){
+  for(int c=1;c<=row; c++){
+    if(c%2==1){
+      System.out.print("* ");
+    }
+    else{
+      System.out.print(c+" ");
+    }
+  }
+  System.out.println();
+}
+
+
+
+
+n=5
+*   *
+*   *
+*   *
+*   *
+*   *
+for(int row=1;row<=n;row++){
+  System.out.print("*");
+  for(int space=1;space<=n-2;space++){
+    System.out.print(" ");
+  }
+  System.out.print("*");
+  System.out.println();
+}
+
+
+Reverse Left Half Pyramid
+n=5
+*****
+****
+***
+**
+*
+for(int row=1;row<=n;row++){
+  for(int star=1;star<=n+1-row;star++){
+    System.out.print("*");
+  }
+  System.out.println();
+}
+
+
+
+n=4
+* _ _ _ *
+* _ _ *
+* _ *
+* *
+for(int row=1;row<=n;row++){
+  System.out.print("*");
+  for(int underscore=1;underscore<=n-row;underscore++){
+    System.out.print("_");
+  }
+  System.out.print("*");
+  System.out.println();
+}
+
+
+
+Staircase Pyramid/ Left Half Pyramid
+n=4
+   *
+  **
+ ***
+****
+for(int row=1;row<=n;row++){
+  for(int space=1;space<=n-row;space++){
+    System.out.print(" ");
+  }
+  for(int star=1;star<=row;star++){
+    System.out.print("*");
+  }
+  System.out.println();
+}
+
+
+
+n=4
+********
+***  ***
+**    **
+*      *
+for(int row=1;row<=n;row++){
+  for(int star1=1; star1<=n+1-row; star1++){
+    System.out.print("*");
+  }
+  for(int space=1; space<=2*(row-1); space++){
+    System.out.print(" ");
+  }
+  for(int star2=1; star2<=n+1-row; star2++){
+    System.out.print("*");
+  }
+  System.out.println();
+}
+
+
+
+Pyramid
+n=4
+   *   
+  ***  
+ ***** 
+*******
+for(int row=1;row<=n;row++){
+  for(int space1=1; space1<=n-row; space1++){
+    System.out.print(" ");
+  }
+  for(int star=1; star<=2*row-1; star++){
+    System.out.print("*");
+  }
+  for(int space2=1; space2<=n-row; space2++){
+    System.out.print(" ");
+  } //its okay if right space part is removed !! (depends on qtn)
+  System.out.println();
+}
+
+
+
+
+1) square howllow pattern
+****
+*  *
+*  *
+****
+for(int row=1;row<=n;row++){
+  if(row==1 || row==n){
+    for(int c=1;c<=n;c++){
+      System.out.print("*");
+    }
+  }
+  else{
+    System.out.print("*");
+    for(int space=1;space<=n-2;space++){
+      System.out.print(" ");
+    }
+    System.out.print("*");
+  }
+  System.out.println();
+}
+
+
+
