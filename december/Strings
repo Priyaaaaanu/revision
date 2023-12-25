@@ -1,0 +1,27 @@
+StringBuilder ans=new StringBuilder();
+
+ans.append(character)
+
+return ans.toString();
+
+
+String vowel="aeiouAEIOU"
+//can check if char is vowel or not
+if(vowel.indexOf(char)==-1)  //the char is not vowel
+
+to check if all char same in string:
+my idea--> checking ith and i-1 th char 
+another idea--> compare all char with 1st char
+
+
+A-65
+Z-90
+
+a-97
+z-122
+
+
+to get substring from a given string in java
+string.substring(from,to+1) //becz to is exclusive
+
+
