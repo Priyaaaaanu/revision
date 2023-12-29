@@ -25,3 +25,14 @@ to get substring from a given string in java
 string.substring(from,to+1) //becz to is exclusive
 
 
+to print reciprocal i.e A reciprocal is Z, B-->Y, ......... same for lowercase
+uppercase--> 65+90=155    155-A-->Z
+lowecase-->  97+122=219 so 219-a-->z
+
+
+check if a char is what??
+uppercase?? --> Character.isUpperCase(ch)
+lowercase?? --> Character.isLowerCase(ch)
+digit?? --> Character.isDigit(ch)
+
+
