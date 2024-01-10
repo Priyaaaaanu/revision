@@ -36,3 +36,11 @@ lowercase?? --> Character.isLowerCase(ch)
 digit?? --> Character.isDigit(ch)
 
 
+char c1=s.charAt(i);
+//CHECK CHAR IS LETTER OR DIGIT??
+if(Character.isLetterOrDigit(c1))
+
+
+CASES
+str.toLowerCase();
+str.toUpperCase();
