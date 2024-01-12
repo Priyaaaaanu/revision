@@ -44,3 +44,32 @@ if(Character.isLetterOrDigit(c1))
 CASES
 str.toLowerCase();
 str.toUpperCase();
+
+
+
+
+REVERSE WORDS IN STRINGS
+
+class Solution {
+    public String reverseWords(String s) {
+        int n=s.length();
+
+        //to remove extra spaces in a given string
+        String str=s.replaceAll("\\s+"," ").trim();
+        //to convert a given string to array of strings
+        String[] strarr=str.split("\\s+");
+
+        int p1=0;
+        int p2=strarr.length-1;
+        //swapping
+        while(p1<p2){
+            String string=strarr[p1];
+            strarr[p1]=strarr[p2];
+            strarr[p2]=string;
+            p1++;
+            p2--;
+        }
+        //converting arr of strings to sentence(string)
+        return String.join(" ",strarr);
+    }
+}
