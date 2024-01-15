@@ -1,0 +1,21 @@
+
+ITERATING OVER HASHSET , //and adding elements into an arraylist
+
+Iterator<Integer> iterator = hs.iterator();    //<Character>  //<String>
+while (iterator.hasNext()) {
+    ans0.add(iterator.next());
+    iterator.remove();//Remove current element from the HashSet
+}
+
+
+HASHMAP 
+
+for(Map.Entry<Integer,Integer> entry:hm.entrySet()){
+  int key=entry.getKey();
+  int value=entry.getValue();
+  if(value==1){
+      ans1.add(key);
+  }
+}
+
+
